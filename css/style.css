@@ -2,6 +2,22 @@ html{
   scroll-behavior: smooth;
 }
 
+/* Header */
+.homepage {
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  align-content: center;
+  color: white;
+  height: 1000px; /* Parallax effect */
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  background-image: url('../images/sona-grass-png.png');
+  background-repeat: no-repeat;
+}
+/* END HEADER */
+
 body{
   margin:auto;
   font-family: museo-slab, sans-serif;
@@ -36,7 +52,7 @@ nav{
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 nav ul{
@@ -44,7 +60,7 @@ nav ul{
   flex-direction: column;
   justify-content: center;
   background-color: rgba(63, 63, 63, 0.6);
-  margin: 0 auto;
+  margin: 1 em;
   padding: 0;
   overflow: hidden;
 }
@@ -59,12 +75,12 @@ nav a{
 
 nav li:hover{
   background-color: rgba(142, 142, 142, 0.6);
-  text-decoration: underline;
+  text-decoration: underline dotted rgb(146, 211, 255) 3px;
 }
 
   .current{
-  text-decoration: underline wavy rgb(41, 129, 187) 2px;
-  text-shadow: 1px 1px rgb(41, 129, 187);
+  text-decoration: underline solid rgb(146, 211, 255) 2px;
+  text-shadow: 1px 1px rgb(146, 211, 255);
 }
 /* END NAV */
 
@@ -97,7 +113,7 @@ nav li:hover{
 /* Header */
 .homepage {
   background-attachment: fixed; /* Parallax effect */
-  background-position:center; /* Parallax effect */
+  background-position: center; /* Parallax effect */
   background-size: cover; /* Parallax effect */
   align-content: center;
   color: white;
@@ -109,10 +125,6 @@ nav li:hover{
   background-repeat: no-repeat;
 }
 /* END HEADER */
-
-.pricing{
-  min-height: 475px;
-}
 
 .card {
   margin: 12px;
@@ -231,13 +243,38 @@ footer{
 }
 
 /* Tablet View */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 650px){
 
   i {
     color: white;
     width: 10px;
     padding: 10px;
     object-fit: contain;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+  footer {
+    font-size: 24px;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+
+  i {
+    color: white;
+    width: 10px;
+    padding: 10px;
+    object-fit: contain;
+}
+
+nav {
+  font-size: 2.5em;
 }
 
 nav ul{
