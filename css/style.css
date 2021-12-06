@@ -2,6 +2,16 @@ html{
   scroll-behavior: smooth;
 }
 
+:root {
+  --color-1: rgb(146, 211, 255);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* Header */
 .homepage {
   background-attachment: fixed; /* Parallax effect */
@@ -9,7 +19,7 @@ html{
   background-size: cover; /* Parallax effect */
   align-content: center;
   color: white;
-  height: 1000px; /* Parallax effect */
+  height: 100vh; /* Parallax effect */
   width: 100%;
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
@@ -17,35 +27,6 @@ html{
   background-repeat: no-repeat;
 }
 /* END HEADER */
-
-body{
-  margin:auto;
-  font-family: museo-slab, sans-serif;
-  font-size: 18px;
-}
-
-h1{
-  font-size: 60px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-h2{
-  font-size: 40px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-h3{
-  font-size: 30px;
-  text-align: center;
-}
-
-.home{
-  text-align: center;
-}
-
 
 /* NAV */
 nav{
@@ -104,32 +85,50 @@ nav li:hover{
 
 .skip a:focus{
   position: absolute;
-  transition: none;
+  transition: top 1s ease-in;
   left:0px;
   top:0px;
 }
 /* END SKIP TO MAIN */
 
-
 *:focus {
   border: 2px solid black;
 }
 
-/* Header */
-.homepage {
-  background-attachment: fixed; /* Parallax effect */
-  background-position: center; /* Parallax effect */
-  background-size: cover; /* Parallax effect */
-  align-content: center;
-  color: white;
-  height: 1000px; /* Parallax effect */
-  width: 100%;
-  grid-column: 1 / -1;
-  grid-row: 1 / span 1;
-  background-image: url('../images/sona-grass-png.png');
-  background-repeat: no-repeat;
+body{
+  margin: auto;
+  font-family: museo-slab, sans-serif;
+  font-size: 18px;
 }
-/* END HEADER */
+
+h1{
+  font-size: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.home-title {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-shadow: 3px 3px rgb(41, 41, 41);
+}
+
+h2{
+  font-size: 40px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h3{
+  font-size: 30px;
+  text-align: center;
+}
+
+.home{
+  text-align: center;
+}
+
 
 .card {
   margin: 12px;
@@ -187,11 +186,6 @@ flex-wrap: wrap;
 display: flex;
 flex-basis: 450px;
 flex-direction: column;
-}
-
-html, body {
-  background-color: var(--dark);
-  margin: 5px;
 }
 
 .container {
