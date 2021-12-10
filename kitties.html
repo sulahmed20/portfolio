@@ -19,17 +19,68 @@
   </head>
   <body>
     <div class="skip"><a href="#skip">Skip to Main Content</a></div>
-      <header class="kitties">
-        <nav>
-          <ul class="nav_links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li class="current"><a href="kitties.html">Our kitties!</a></li>
-            <li><a href="contact.html">Contact us!</a></li>
-          </ul>
-        </nav>
-      </header>
+
+    <header class="kitties-header">
+
+      <!-- NAV SECTION -->
+      <nav class="navbar">
+         <div class="navbar-container">
+           <div class="navbar-brand">
+             <a href="index.html">
+               <img src="images/icons/logo-white.png" alt="Rent-a-Kitty" />
+             </a>
+           </div>
+   
+           <ul class="navbar-nav">
+             <li>
+               <a class="current" href="index.html">Home</a>
+             </li>
+             <li>
+               <a href="pricing.html">Pricing</a>
+             </li>
+             <li>
+               <a href="kitties.html">Kitties!</a>
+             </li>
+             <li>
+               <a href="contact.html">Make a Reservation!</a>
+             </li>
+           </ul>
+   
+           <!-- Hamburger Menu -->
+           <button type="button" class="hamburger" id="menu-btn">
+             <span class="hamburger-top"></span>
+             <span class="hamburger-middle"></span>
+             <span class="hamburger-bottom"></span>
+           </button>
+         </div>
+
+       </nav>
+   
+       <!-- Mobile Menu -->
+       <div class="mobile-menu hidden" id="menu">
+         <ul>
+           <li>
+             <a href="index.html">Home</a>
+           </li>
+           <li>
+             <a href="pricing.html">Pricing</a>
+           </li>
+           <li>
+             <a href="kitties.html">Kitties!</a>
+           </li>
+           <li>
+             <a href="contact.html">Make a Reservation!</a>
+           </li>
+         </ul>
+       </div>
+
+       <div class="title-box">
+        <h1 class="home-title">Kitty Gallery!</h1>
+      </div>
+
+   </header>
     <main class="about" id="skip">
+      <h1>Check out all our adorable kitties below!</h1>
       <div class="container">
         <a href="https://photos.app.goo.gl/tP5vftgxENMYuBpL7">
           <img src="images/esma-boop.jpg" alt="Gray cat getting booped on nose" />
@@ -108,5 +159,6 @@
       &copy; Sulayman Ahmed - SI 339 FA21</p>
       <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>      
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

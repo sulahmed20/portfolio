@@ -19,19 +19,69 @@
     </head>
     <body>
       <div class="skip"><a href="#skip">Skip to Main Content</a></div>
-        <header class="pricing">
-          <nav>
-            <ul class="nav_links">
-              <li><a href="index.html">Home</a></li>
-              <li class="current"><a href="pricing.html">Pricing</a></li>
-              <li><a href="kitties.html">Our kitties!</a></li>
-              <li><a href="contact.html">Contact us!</a></li>
-            </ul>
-          </nav>
-        </header>
+
+      <header class="pricing-header">
+
+        <!-- NAV SECTION -->
+        <nav class="navbar">
+           <div class="navbar-container">
+             <div class="navbar-brand">
+               <a href="index.html">
+                 <img src="images/icons/logo-white.png" alt="Rent-a-Kitty" />
+               </a>
+             </div>
+     
+             <ul class="navbar-nav">
+               <li>
+                 <a class="current" href="index.html">Home</a>
+               </li>
+               <li>
+                 <a href="pricing.html">Pricing</a>
+               </li>
+               <li>
+                 <a href="kitties.html">Kitties!</a>
+               </li>
+               <li>
+                 <a href="contact.html">Make a Reservation!</a>
+               </li>
+             </ul>
+     
+             <!-- Hamburger Menu -->
+             <button type="button" class="hamburger" id="menu-btn">
+               <span class="hamburger-top"></span>
+               <span class="hamburger-middle"></span>
+               <span class="hamburger-bottom"></span>
+             </button>
+           </div>
+
+         </nav>
+     
+         <!-- Mobile Menu -->
+         <div class="mobile-menu hidden" id="menu">
+           <ul>
+             <li>
+               <a href="index.html">Home</a>
+             </li>
+             <li>
+               <a href="pricing.html">Pricing</a>
+             </li>
+             <li>
+               <a href="kitties.html">Kitties!</a>
+             </li>
+             <li>
+               <a href="contact.html">Make a Reservation!</a>
+             </li>
+           </ul>
+         </div>
+
+         <div class="title-box">
+          <h1 class="home-title">Our Pricing Plans</h1>
+        </div>
+
+     </header>
 
       <main class="about" id="skip">
-        <h1 id = "pricing">Pricing</h1>
+        <h1 id = "pricing">Choose from 1 of our 3 main rental plans!</h1>
         <div class="pricing">
           <div class="card">
             <header><h2>$50</h2></header>
@@ -40,7 +90,9 @@
               <li>All food, treats, and litter included</li>
               <li>Pay-per-month</li>
             </ul>
-            <button>Buy 1-month rental!</button>
+            <button 
+            class="buy-button" 
+            onclick="window.location.href = 'contact.html';">Buy 1-month rental!</button>
           </div>
           <div class="card">
             <header><h2>$250</h2></header>
@@ -51,7 +103,7 @@
             </ul>
             <button 
             class="buy-button" 
-            onclick="window.location.href = 'https://sulahmed20.github.io/portfolio/contact.html';">
+            onclick="window.location.href = 'contact.html';">
             Buy 6-month rental!
             </button>
           </div>
@@ -62,7 +114,9 @@
               <li>25% OFF!!</li>
               <li>1-time payment</li>
             </ul>
-            <button>Buy 12-month rental!</button>
+            <button 
+            class="buy-button" 
+            onclick="window.location.href = 'contact.html';">Buy 12-month rental!</button>
           </div>
         </div>
     
@@ -71,5 +125,6 @@
         &copy; Sulayman Ahmed - SI 339 FA21</p>
       <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>      
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
